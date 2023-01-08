@@ -29,7 +29,7 @@ This layer is the actual database that we decide to use to build our application
   
 
 #### About Spring Boot workflow
-![](J:\JAVA\spring\mySpringMasterRev\myImg\SBworkflow.png)
+![](..\mySpringMasterRev\myImg\SBworkflow.png)
 #### Spring Boot workflow acting:
 
 1. The Client makes an HTTP request.
