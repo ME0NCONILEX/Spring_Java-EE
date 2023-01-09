@@ -1,4 +1,4 @@
-## Getting Started with Spring / Java EE
+## Getting Start with Spring / Java EE
 
 ### IOC - DI 
 ( Will be continued / refactored)
