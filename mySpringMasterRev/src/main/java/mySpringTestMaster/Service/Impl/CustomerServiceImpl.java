@@ -3,6 +3,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import mySpringTestMaster.DAO.AccountDao;
 import mySpringTestMaster.DAO.CustomerDao;
+import mySpringTestMaster.Exception.DataNotFoundException;
 import mySpringTestMaster.Model.Account;
 import mySpringTestMaster.Model.Customer;
 import mySpringTestMaster.Service.CustomerService;
@@ -15,14 +16,14 @@ public class CustomerServiceImpl implements CustomerService {
         this.accountDao = accountDao;
         this.customerDao = customerDao;
     }
-  /*@Autowired
+  /* @Autowired
   public void setAccountDao(AccountDao accountDao) {
     this.accountDao = accountDao;
   }
   @Autowired
   public void setCustomerDao(CustomerDao customerDao) {
     this.customerDao = customerDao;
-  }*/
+  } */
     @Override
     public Customer registerCustomer(Customer customerData) {
         // step1: validate the method parameters
@@ -37,5 +38,11 @@ public class CustomerServiceImpl implements CustomerService {
         customerData.setAccount(createdAccount);
         Customer createdCustomer = customerDao.create(customerData);
         return createdCustomer;
+    }
+    @Override
+    public Customer findById(Long id) throws DataNotFoundException {
+        if (id == null) throw new IllegalArgumentException("id was null");
+        return customerDao.findById(id)
+                .orElseThrow(()-> new DataNotFoundException("data not found"));
     }
 }

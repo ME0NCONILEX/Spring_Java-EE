@@ -1,0 +1,41 @@
+package mySpringTestMaster.DAO.Impl;
+import org.springframework.stereotype.Component;
+import mySpringTestMaster.DAO.TransactionDao;
+import mySpringTestMaster.Exception.DataNotFoundException;
+import mySpringTestMaster.Model.Transaction;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+import java.util.Optional;
+@Component
+public class TransactionDaoImpl implements TransactionDao {
+
+    List<Transaction> storage = new ArrayList<>();
+
+    @Override
+    public Transaction create(Transaction transaction) {
+        if (transaction == null) throw new IllegalArgumentException("transaction data was null");
+        //todo: add more validations...
+        storage.add(transaction);
+        return transaction;
+    }
+
+    @Override
+    public Optional<Transaction> findById(String id) {
+        if (id == null) throw new IllegalArgumentException("id was null");
+        return storage.stream()
+                .filter(transaction -> transaction.getId().equals(id))
+                .findFirst();
+    }
+
+    @Override
+    public Collection<Transaction> findAll() {
+        return new ArrayList<>(storage);
+    }
+
+    @Override
+    public void remove(String id) throws DataNotFoundException {
+        findById(id).ifPresent(transaction -> storage.remove(transaction));
+        throw new DataNotFoundException("Data not found exception");
+    }
+}
