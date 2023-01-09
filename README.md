@@ -2,7 +2,7 @@
 
 ### IOC - DI 
 ( Will be continued / refactored)
-![](https://github.com/ME0NCONILEX/Spring---Java-EE/blob/main/mySpringMasterRev/myImg/4layer0nTop.png)
+![](https://github.com/ME0NCONILEX/Spring---Java-EE/blob/main/mySpringMasterRev/myImg/4layer0nTop.jpg)
 * Spring Boot is built on top of the Spring Framework. It's a more automated and simplified version of Spring.
   Spring Boot Architecture has (only) four layers:
 #### Presentation Layer - is at the top of the architecture and is responsible for:
@@ -29,7 +29,7 @@ This layer is the actual database that we decide to use to build our application
   
 
 #### About Spring Boot workflow
-![](https://github.com/ME0NCONILEX/Spring---Java-EE/blob/main/mySpringMasterRev/myImg/SBworkflow.png)
+![](https://github.com/ME0NCONILEX/Spring---Java-EE/blob/main/mySpringMasterRev/myImg/SBworkflow.jpg)
 #### Spring Boot workflow acting:
 
 1. The Client makes an HTTP request.
@@ -43,9 +43,9 @@ This layer is the actual database that we decide to use to build our application
 
 #### (exempel)
 
-![](https://github.com/ME0NCONILEX/Spring---Java-EE/blob/main/mySpringMasterRev/myImg/J2EE.jpeg)
-![](https://github.com/ME0NCONILEX/Spring---Java-EE/blob/main/mySpringMasterRev/myImg/dao.jpeg)
-![](https://github.com/ME0NCONILEX/Spring---Java-EE/blob/main/mySpringMasterRev/myImg/model.jpeg)
+![](https://github.com/ME0NCONILEX/Spring---Java-EE/blob/main/mySpringMasterRev/myImg/ML-JavaEE.jpg)
+![](https://github.com/ME0NCONILEX/Spring---Java-EE/blob/main/mySpringMasterRev/myImg/DAO.jpg)
+![](https://github.com/ME0NCONILEX/Spring---Java-EE/blob/main/mySpringMasterRev/myImg/Model.jpg)
 
 
 
