@@ -37,7 +37,7 @@ This layer is the actual database that we decide to use to build our application
 3. The Controller understands what type of request will process, and then it deals with it.
 4. If it is needed, it calls the service class.
 5. The Service Class is going to handle business logic. It does this on the data from the database.
-6. OK? --> JSP page.
+6. OK? --> JSP (Java Server Pages).
 
 * * *
 
