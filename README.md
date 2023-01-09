@@ -45,9 +45,11 @@ This layer is the actual database that we decide to use to build our application
 
 ![](https://github.com/ME0NCONILEX/Spring---Java-EE/blob/main/mySpringMasterRev/myImg/ML-JavaEE.jpg)
 
+_______________
 
 ![](https://github.com/ME0NCONILEX/Spring---Java-EE/blob/main/mySpringMasterRev/myImg/DAO.jpg)
 
+________________
 
 ![](https://github.com/ME0NCONILEX/Spring---Java-EE/blob/main/mySpringMasterRev/myImg/Model.jpg)
 
